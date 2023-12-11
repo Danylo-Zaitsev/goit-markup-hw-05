@@ -508,79 +508,116 @@
 
     <!-- ================ МОДАЛЬНЕ ВІКНО ================ -->
 
-    <div class="backdrop is_open">
-      <div class="modal">
-        <button class="modal_close_btn">
+    <div class="backdrop">
+      <div class="modal-window">
+        <button class="close-modal-btn" type="button">
           <svg
-            class="modal_close_btn_icon"
+            class="icon-close"
             width="8"
             height="8"
-            aria-label="close modal icon"
+            aria-label="modal close icon"
           >
-            <use href="./images/icons.svg#icon-close"></use>
+            <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="contacts_text">
+        <p class="modal-window-title">
           Leave your contacts and we will call you back
         </p>
-        <form class="contacts_form">
-          <div class="contacts_form_wrapper">
-            <label class="contacts_form_lable" for="user-name">Name</label>
-            <input
-              class="contacts_form_input"
-              id="user-name"
-              name="user-name"
-              type="text"
-              required
-            />
+
+        <form>
+          <div class="form-container">
+            <label for="user-name" class="input-label">Name</label>
+            <div class="input-container">
+              <input
+                class="input-field"
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+              />
+              <svg
+                class="input-icon"
+                width="18"
+                height="24"
+                aria-label="icon user"
+              >
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-          <div class="contacts_form_wrapper">
-            <label class="contacts_form_lable" for="phone-number">Phone</label>
-            <input
-              class="contacts_form_input"
-              id="phone-number"
-              name="phone-number"
-              type="tel"
-              required
-            />
+          <div class="form-container">
+            <label for="phone" class="input-label">Phone</label>
+            <div class="input-container">
+              <input
+                class="input-field"
+                type="tel"
+                name="user-phone"
+                id="phone"
+                required
+              />
+              <svg
+                class="input-icon"
+                width="18"
+                height="24"
+                aria-label="icon phone"
+              >
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-          <div class="contacts_form_wrapper">
-            <label class="contacts_form_lable" for="user-email">Email</label>
-            <input
-              class="contacts_form_input"
-              id="user-email"
-              name="user-email"
-              type="email"
-              required
-            />
+          <div class="form-container">
+            <label for="user-email" class="input-label">Email</label>
+            <div class="input-container">
+              <input
+                class="input-field"
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+              />
+              <svg
+                class="input-icon"
+                width="18"
+                height="24"
+                aria-label="icon email"
+              >
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
-          <div class="contacts_form_wrapper textarea_wrapper">
-            <label class="contacts_form_lable" for="user-comment"
-              >Comment</label
-            >
+          <div class="form-container comment-container">
+            <label for="user-comment" class="input-label">Comment </label>
             <textarea
-              class="contacts_form_comment"
+              class="comment-field"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
               required
             ></textarea>
           </div>
-          <div class="contacts_form_checkbox_wrapper">
+          <div class="checkbox-container">
             <input
-              class="contacts_form_checkbox"
-              id="user-privacy"
-              name="user-privacy"
+              class="checkbox-field visually-hidden"
               type="checkbox"
+              id="user-privacy"
               value="true"
+              name="user-privacy"
               required
             />
-            <lable class="contacts_form_chbx_label" for="userprivacy"
+            <label class="checkbox-label input-label" for="user-privacy"
+              ><span class="checkbox-span"
+                ><svg
+                  class="checkbox-icon"
+                  width="10"
+                  height="8"
+                  aria-label="checkbox icon ok"
+                >
+                  <use href="./images/icons.svg#icon-ok"></use></svg></span
               >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></lable
-            >
+              <a class="checkbox-link" href="">Privacy Policy</a>
+            </label>
           </div>
-          <button class="contacts_form_submit_btn" type="submit">Send</button>
+          <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
