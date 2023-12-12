@@ -830,9 +830,9 @@ ul a {
 }
 
 .checkbox-field:checked + .checkbox-label > .checkbox-span {
-    border: none;
     background-color: #404bbf;
     fill: #f4f4fd;
+    border: none;
 }
 .checkbox-field:focus + .checkbox-label > .checkbox-span {
   border: 1px solid #404bbf;
