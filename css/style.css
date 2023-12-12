@@ -597,11 +597,12 @@ ul a {
   border: 1px solid #fff;
   background-color: transparent;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-input::placeholder {
@@ -829,9 +830,9 @@ ul a {
 }
 
 .checkbox-field:checked + .checkbox-label > .checkbox-span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
+    border: none;
+    background-color: #404bbf;
+    fill: #f4f4fd;
 }
 .checkbox-field:focus + .checkbox-label > .checkbox-span {
   border: 1px solid #404bbf;
