@@ -834,9 +834,10 @@ ul a {
     border: none;
     fill: #f4f4fd;
 }
+/* 
 .checkbox-field:focus + .checkbox-label > .checkbox-span {
   border: 1px solid #404bbf;
-}
+} */
 
 .form-btn {
   display: block;
