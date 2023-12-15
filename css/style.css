@@ -453,7 +453,7 @@ ul a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio_list:hover .portfolio_mane_list{
+.portfolio_mane_list:hover {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -491,7 +491,7 @@ ul a {
  
 }
 
-.overlay:hover .overlay_text{
+.portfolio_mane_list:hover .overlay_text{
     transform: translateY(0%);
 }
 
